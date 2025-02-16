@@ -1,11 +1,6 @@
-import {moudleName, networkConfig, suiClient, suiGraphQLClient} from "@/networkConfig";
-import {AdoptContract, AdoptContracts, AnimalContracts, Contracts, Record, UserContracts} from "@/type";
-import {SuiObjectData, SuiObjectResponse, SuiParsedData} from "@mysten/sui/client";
+import { networkConfig, suiClient, suiGraphQLClient} from "@/networkConfig";
 import {Transaction} from "@mysten/sui/transactions";
-import {isValidSuiAddress, SUI_SYSTEM_STATE_OBJECT_ID, SUI_TYPE_ARG} from "@mysten/sui/utils";
-import queryFolderDataContext from "./graphContext";
-import {useCurrentAccount} from "@mysten/dapp-kit";
-import {useEffect, useState} from "react";
+import {SUI_TYPE_ARG} from "@mysten/sui/utils";
 
 
 /*
